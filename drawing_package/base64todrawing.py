@@ -3,14 +3,14 @@ import json
 import base64
 
 
-def base64todrawing(data, savepath):
+def base64todrawing(df, savepath):
     """
     This function will convert base64 data (stored as .json) into images of the drawings and name the drawings
     as (PartID_timecond.jpg)
 
     Inputs:
+    :df: pandas dataframe with a row for each base64 code that you want converted
     :savepath: where you want the images of the drawings saved
-    :folder: the folder containing all the base64 code you want converted
     """
 
     #with open(folder, 'r') as f:
